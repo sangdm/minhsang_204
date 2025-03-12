@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: 'Như Anh Đã Thấy Em',
             artist: 'Phuc Xp',
-            cover: './acssets/photo/nhuanhdathayem.jpg',
+            cover: './acssets/photo/Nhuanhdathayem.jpg',
             file: "./acssets/audio/PhucXp - Nhu Anh Da Thay Em (CTTDE 2)  Official Video - PHUCXP.mp3"
         }
         
