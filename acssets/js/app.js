@@ -139,6 +139,9 @@ document.addEventListener('DOMContentLoaded', function() {
     loadSong(currentSongIndex);
 });
 
+
+
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -185,4 +188,13 @@ const app = {
     }
 }
 app.start();
+
+
+document.addEventListener('click', function initAudioAutoplay() {
+    const audio = document.querySelector('audio') || document.getElementsByTagName('audio')[0];
+    if (audio) {
+        playPauseSong();
+        document.removeEventListener('click', initAudioAutoplay);
+    }
+}, { once: true });
 
