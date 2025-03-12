@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Mất Kết Nối',
             artist: 'Dương Domic',
             cover: './acssets/photo/Mat-ket-noi.jpg',
-            file: "./acssets/audio/Dương Domic - Mất Kết Nối  EP 'Dữ Liệu Quý' - Dương Domic.mp3"
+            file: "./acssets/audio/Mất kết nối.mp3"
         },
         {
             title: 'Thêm Bao Nhiêu Lâu',
