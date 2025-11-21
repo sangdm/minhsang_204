@@ -11,8 +11,30 @@
     <link rel="stylesheet" href="./acssets/css/base.css">
     <link rel="shortcut icon" href="./acssets/photo/avt1.jpg" type="image/x-icon">
     <title>Profile DMS</title>
+    
 </head>
 <body>
+    <!-- Popup Intro -->
+<div id="intro-popup" class="popup-overlay">
+    <div class="popup-content">
+        <h2 class="popup-title">✨ Xin chào bạn! ✨</h2>
+        <p class="popup-desc">
+            Mình là <strong>Sáng</strong> – một người suy nghĩ nhiều, nhạy cảm. Bản thân mình còn từng bị phản bội nữa nên bản thân mình bây giờ 
+            thật sự rất nhạy cảm. Nếu đọc xong mà bạn cảm thấy bạn vẫn muốn tiếp tục tìm hiểu về mình thì hãy tiếp tục nha, còn nếu đọc xong mà thấy không hợp hay không thích thì cũng không sao, cảm ơn bạn đã ghé thăm nha !!!
+        </p>
+        <p class="popup-desc">
+            
+            Bạn muốn tiếp tục khám phá chứ? 
+        </p>
+
+        <div class="popup-buttons">
+            <button class="btn-enter" id="continue-btn">Tiếp tục vào trang</button>
+            <button  class="btn-exit" id="leave-btn">Rời đi</button>
+        </div>
+    </div>
+</div>
+
+    
     <!-- Video Background -->
     <div class="video-bg">
         <video class="desktop-video" autoplay loop muted playsinline>
@@ -102,7 +124,21 @@
             </div>
         </div>
     </div>
+
+
     <script src="./acssets/js/app.js"></script>
+    <script>
+    // Ấn nút tiếp tục
+    document.getElementById('continue-btn').onclick = function() {
+        document.getElementById('intro-popup').style.display = "none";
+    };
+
+    // Ấn nút rời đi (quay về Google)
+    document.getElementById('leave-btn').onclick = function() {
+        window.location.href = "https://www.google.com";
+    };
+</script>
+
 
 </body>
 </html>
